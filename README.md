@@ -17,12 +17,12 @@ An **Isolation Forest** algorithm is then applied to automatically isolate these
 anomaly-detector/
 ├── experiments/
 │   ├── exploration.ipynb
-│   └── isolation\_forest\_test.ipynb
-├── generate\_signals.py
-├── isolation\_forest\_results.png
-├── model\_isolation\_forest.py
+│   └── isolation\\\_forest\\\_test.ipynb
+├── generate\\\_signals.py
+├── isolation\\\_forest\\\_results.png
+├── model\\\_isolation\\\_forest.py
 ├── README.md
-└── signal\_data.csv
+└── signal\\\_data.csv
 ```
 
 ## Getting Started
@@ -40,7 +40,7 @@ pip install pandas scikit-learn matplotlib
 **1. Generate the synthetic network data**
 
 ```bash
-python generate\_signals.py
+python generate\\\_signals.py
 ```
 
 This creates a CSV file containing the simulated RSSI and SNR metrics over time.
@@ -48,7 +48,7 @@ This creates a CSV file containing the simulated RSSI and SNR metrics over time.
 **2. Run the anomaly detection model**
 
 ```bash
-python model\_isolation\_forest.py
+python model\\\_isolation\\\_forest.py
 ```
 
 This processes the dataset, trains the Isolation Forest model, evaluates its accuracy, and generates a visualization of the detected anomalies.
@@ -61,7 +61,7 @@ The Isolation Forest successfully isolated the degraded signal conditions, clear
 
 ## Experiments Folder
 
-The `experiments/` directory serves as a scratchpad for initial research and contains two Jupyter notebooks: `exploration.ipynb` and `isolation\_forest\_test.ipynb`. They were used to compare approaches to setting the contamination rate, such as calculating it dynamically with a 3-sigma threshold (based on the signal's mean and standard deviation) versus hardcoding it, before the final logic was integrated into the main Python scripts.
+The `experiments/` directory serves as a scratchpad for initial research and contains two Jupyter notebooks: `exploration.ipynb` and `isolation\\\_forest\\\_test.ipynb`. They were used to compare approaches to setting the contamination rate, such as calculating it dynamically with a 3-sigma threshold (based on the signal's mean and standard deviation) versus hardcoding it, before the final logic was integrated into the main Python scripts.
 
 ## Technical Notes \& Future Improvements
 

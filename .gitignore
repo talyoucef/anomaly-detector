@@ -1,0 +1,29 @@
+Environments
+
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+Editor/IDE configurations
+
+.vscode/
+.idea/
+
+Python cache
+
+pycache/
+*.py[cod]
+*$py.class
+
+Jupyter Notebook checkpoints
+
+.ipynb_checkpoints/
+
+OS generated files
+
+.DS_Store
+Thumbs.db
